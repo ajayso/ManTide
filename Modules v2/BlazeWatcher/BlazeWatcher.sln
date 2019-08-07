@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BlazeWatcher", "BlazeWatcher\BlazeWatcher.pyproj", "{37C4727D-D2F7-4265-A805-6EE70FA15F73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37C4727D-D2F7-4265-A805-6EE70FA15F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C4727D-D2F7-4265-A805-6EE70FA15F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA003F7-0CFC-4A96-9C45-54B633E5A608}
+	EndGlobalSection
+EndGlobal
