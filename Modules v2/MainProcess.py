@@ -6,6 +6,7 @@ from FeatureExtractor import FeatureExtractor
 
 import pandas as pd
 import numpy as np
+import mysql
 
 """
 Main Process appends the feature lists into the final dataset.
@@ -19,17 +20,12 @@ Corr_Thress --> Float or int , the minimum Correlation Threshold (includes posit
 
 """
 class DataManager:
-    
-	def __init__ (self):
-	
 	def Load(self, data, Threshold, Target, Corr_Thresh ):
-
 		"""
 		Extracts Features Sets for Technical , Commodities, Currencies and World Markets.
 		Imported from different python sources codes from Root Directory.
 		"""
 		FE = FeatureExtractor(data)
-
 		print("Commencing Feature Extraction ...\n")
 		tech_feat = FE.TechnicalFeatureExtractor(Target,Corr_Thresh, -Corr_Thresh)
 		world_feat = FE.WorldMarketExtractor(Target,Corr_Thresh, -Corr_Thresh)
@@ -104,3 +100,7 @@ class DataManager:
 		print("The Column List is : \n")
 		print(data_copy.columns)
 		return data_copy
+
+
+	
+	
